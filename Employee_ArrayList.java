@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Employee_ArrayList
 {
     private String firstName;
@@ -34,6 +36,19 @@ public class Employee_ArrayList
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee_ArrayList that = (Employee_ArrayList) o;
+        return id == that.id && firstName.equals(that.firstName) && lastName.equals(that.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, id);
     }
 
     @Override

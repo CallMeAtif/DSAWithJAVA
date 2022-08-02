@@ -2,13 +2,22 @@ package com.company;
 
 import java.util.Objects;
 
-public class Employee_ArrayList
+//This class was used
+//ArrayList
+//Singly linked list and EmployeeNode (for practicing)
+
+
+
+
+
+
+public class Employee
 {
     private String firstName;
     private String lastName;
     private int id;
 
-    public Employee_ArrayList(String firstName, String lastName, int id) {
+    public Employee(String firstName, String lastName, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
@@ -42,7 +51,7 @@ public class Employee_ArrayList
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee_ArrayList that = (Employee_ArrayList) o;
+        Employee that = (Employee) o;
         return id == that.id && firstName.equals(that.firstName) && lastName.equals(that.lastName);
     }
 

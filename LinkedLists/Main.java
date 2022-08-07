@@ -8,6 +8,7 @@ public class Main {
         Employee armanBhakshey = new Employee("Arman" , "Bhakshey", 789);
 
         EmployeeLinkedList list = new EmployeeLinkedList();
+
         list.addToFront(atifMulla);
         list.addToFront(parvezMulla);
         list.addToFront(armanBhakshey);

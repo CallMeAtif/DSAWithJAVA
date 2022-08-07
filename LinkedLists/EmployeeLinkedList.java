@@ -1,6 +1,7 @@
 package com.company.LinkedLists;
 
 public class EmployeeLinkedList {
+
     private EmployeeNode head;
 
     public void addToFront(Employee employee){

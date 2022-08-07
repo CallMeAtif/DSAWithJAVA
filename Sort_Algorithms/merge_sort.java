@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 
 public class merge_sort {
     public static void mergeSort(int [] arr, int start, int end){

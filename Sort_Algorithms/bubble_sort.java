@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 import java.util.*;
 
 public class bubble_sort {

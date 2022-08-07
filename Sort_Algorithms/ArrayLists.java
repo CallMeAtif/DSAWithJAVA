@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Sort_Algorithms;
+import com.company.LinkedLists.Employee;
+
 import java.util.ArrayList;
 import java.util.List;
 

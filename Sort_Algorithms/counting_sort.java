@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 
 public class counting_sort {
     public static void countingSort(int[] arr, int min, int max){

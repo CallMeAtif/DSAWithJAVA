@@ -1,4 +1,4 @@
-package com.company;
+package com.company.LinkedLists;
 
 public class EmployeeLinkedList {
     private EmployeeNode head;

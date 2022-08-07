@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 
 public class shell_sort {
     public static void printArray(int [] arr){

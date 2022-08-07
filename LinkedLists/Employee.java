@@ -1,4 +1,4 @@
-package com.company;
+package com.company.LinkedLists;
 
 import java.util.Objects;
 

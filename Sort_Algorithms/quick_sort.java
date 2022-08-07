@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 
 public class quick_sort {
     public static void quickSort(int [] arr ,int start, int end){

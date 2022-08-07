@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sort_Algorithms;
 
 public class insertion_sort_recursive {
     public static void insertion_recur(int [] arr, int numItems){

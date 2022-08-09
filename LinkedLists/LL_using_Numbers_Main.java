@@ -20,6 +20,5 @@ public class LL_using_Numbers_Main {
         list.printList();
 //        System.out.println(list.returnSize());
 
-
     }
 }

@@ -16,7 +16,9 @@ public class LL_using_Numbers_Main {
 //        System.out.println(list.deleteFirst());
 //        System.out.println(list.deleteLast());
 //        list.printList();
-        System.out.println(list.deleteFromIndex(2));
+//        System.out.println(list.deleteFromIndex(2));
+
+        System.out.println(list.find(5));
         list.printList();
 //        System.out.println(list.returnSize());
 

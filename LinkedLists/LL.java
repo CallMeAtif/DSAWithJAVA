@@ -132,6 +132,19 @@ public class LL {
     }
 
 
+    //Finding the node pointing to the given value
+    public Node find(int val){
+        Node node = head;
+        while(node != null) {
+            if (node.value == val) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+
     //Creating a node
     private class Node{
         private int value;

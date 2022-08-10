@@ -3,8 +3,8 @@ package com.company.LinkedLists;
 public class DoublyLL {
 
     private Node head;
-    private Node tail;
 
+    // Adding in first
     public void addToFirst(int val){
         Node node = new Node(val);
         node.next = head;
@@ -15,6 +15,8 @@ public class DoublyLL {
         head = node;
     }
 
+
+    //Printing List
     public void printList(){
         Node current = head;
 
@@ -26,6 +28,7 @@ public class DoublyLL {
     }
 
 
+    //Printing List in reverse
     public void printListInReverse(){
         Node current = head;
         Node last = null;
@@ -45,6 +48,7 @@ public class DoublyLL {
         System.out.print("START");
     }
 
+    //Inserting in last
     public void InsertLast(int value){
 
         Node node = new Node(value);
@@ -65,6 +69,35 @@ public class DoublyLL {
         last.next = node;
         node.prev = last;
 
+    }
+
+    public Node find(int val){
+        Node node = head;
+        while(node != null) {
+            if (node.value == val) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+    //Inserting after a given node value
+    public void insert(int after,int value){
+
+        Node p = find(after);
+        if(p == null){
+            System.out.println("Value doesn't exists");
+            return;
+        }
+
+        Node node = new Node(value);
+
+        node.next = p.next;
+        node.prev = p;
+        p.next = node;
+        if(node.next != null){
+            node.next.prev = node;
+        }
     }
 
     private class Node{

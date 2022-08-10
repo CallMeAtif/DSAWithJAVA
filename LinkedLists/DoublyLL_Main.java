@@ -12,7 +12,9 @@ public class DoublyLL_Main {
 //        list.printList();
 //        list.printListInReverse();
 //        list.InsertLast(6);
-        list.InsertLast(4);
+//        list.InsertLast(4);
+
+        list.insert(3,9);
         list.printList();
     }
 }

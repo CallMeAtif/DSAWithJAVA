@@ -14,7 +14,8 @@ public class DoublyLL_Main {
 //        list.InsertLast(6);
 //        list.InsertLast(4);
 
-        list.insert(3,9);
+//        list.insert(3,9);
+        list.addBefore(10,2);
         list.printList();
     }
 }

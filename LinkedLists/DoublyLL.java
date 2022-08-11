@@ -100,6 +100,26 @@ public class DoublyLL {
         }
     }
 
+    public void addBefore(int value,int before){
+        if(head == null){
+            System.out.println("The list was Empty so added the node as new Node");
+            addToFirst(value);
+        }
+        Node current = head;
+        Node p = null;
+        while(current.value != before){
+            p = current;
+            current = current.next;
+        }
+
+        Node node = new Node(value);
+        node.next = p.next;
+        p.next = node;
+        node.prev = p;
+        node.next.prev = node;
+
+    }
+
     private class Node{
 
         private int value;

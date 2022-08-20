@@ -22,7 +22,11 @@ public class Main_for_SinglyLL_Stack {
         //peek
 //        System.out.println(stack.peek());
 
+        //size
+        System.out.println(stack.size());
+
         //printing
         stack.printStack();
+
     }
 }

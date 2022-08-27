@@ -12,7 +12,7 @@ public class  CircularQueue {
     }
 
     public void add(Employee employee){
-        if(size() == queue.length){
+        if(size() == queue.length - 1){
             int numItems = size();
             Employee [] newQueue = new Employee[2 * queue.length];
 

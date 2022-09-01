@@ -1,5 +1,6 @@
 package Stack;
 
+import Employee.Employee;
 public class Stack_for_SinglyLL {
     private SinglyLL stack;
     private int top;

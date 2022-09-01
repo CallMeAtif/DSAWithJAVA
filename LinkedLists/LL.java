@@ -1,4 +1,4 @@
-package com.company.LinkedLists;
+package LinkedLists;
 
 public class LL {
 

@@ -1,5 +1,5 @@
 package Queues;
-
+import Employee.Employee;
 public class ArrayQueue_Main {
     public static void main(String[] args) {
         Employee atifmulla = new Employee("Atif", "mulla", 123);

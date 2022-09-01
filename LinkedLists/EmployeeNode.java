@@ -1,5 +1,5 @@
-package com.company.LinkedLists;
-
+package LinkedLists;
+import Employee.Employee;
 public class EmployeeNode {
 
     private Employee employee;

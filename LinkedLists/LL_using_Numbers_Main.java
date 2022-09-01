@@ -1,4 +1,4 @@
-package com.company.LinkedLists;
+package LinkedLists;
 
 public class LL_using_Numbers_Main {
     public static void main(String[] args) {

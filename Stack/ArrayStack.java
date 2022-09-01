@@ -1,6 +1,7 @@
 package Stack;
 
 import java.util.EmptyStackException;
+import Employee.Employee;
 
 public class ArrayStack {
     private Employee [] stack;

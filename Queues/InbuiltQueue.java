@@ -1,5 +1,6 @@
 package Queues;
 
+import Employee.Employee;
 import java.util.LinkedList;
 import java.util.Queue;
 

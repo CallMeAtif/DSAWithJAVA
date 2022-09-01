@@ -1,5 +1,7 @@
 package com.company.LinkedLists;
 
+import LinkedLists.DoublyLL;
+
 public class DoublyLL_Main {
     public static void main(String[] args) {
         DoublyLL list = new DoublyLL();

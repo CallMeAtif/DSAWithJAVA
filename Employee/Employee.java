@@ -1,15 +1,8 @@
-package com.company.LinkedLists;
+package Employee;
 
 import java.util.Objects;
 
-//This class was used
-//ArrayList
-//Singly linked list and EmployeeNode (for practicing)
-
-
-
-public class Employee
-{
+public class Employee {
     private String firstName;
     private String lastName;
     private int id;

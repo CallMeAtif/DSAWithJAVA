@@ -1,5 +1,6 @@
 package Stack;
 
+import Employee.Employee;
 import java.util.EmptyStackException;
 
 public class SinglyLL {

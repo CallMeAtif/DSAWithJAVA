@@ -1,5 +1,6 @@
 package Stack;
 
+import Employee.Employee;
 public class ArrayStack_Main {
     public static void main(String[] args) {
         Employee atifmulla = new Employee("Atif" ,"Mulla", 123);

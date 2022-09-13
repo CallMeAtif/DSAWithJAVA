@@ -17,7 +17,10 @@ public class DoublyLL_Main {
 //        list.InsertLast(4);
 
 //        list.insert(3,9);
-        list.addBefore(10,2);
+//        list.addBefore(10,2);
+//        System.out.println(list.deleteFirst());
+//        System.out.println(list.deleteLast());
+        System.out.println(list.deleteFromIndex(2));
         list.printList();
     }
 }

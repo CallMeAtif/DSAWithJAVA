@@ -1,8 +1,15 @@
 package LinkedLists;
 
+import java.util.NoSuchElementException;
+
 public class DoublyLL {
 
     private Node head;
+    private int size;
+
+    public DoublyLL(){
+        this.size = 0;
+    }
 
     // Adding in first
     public void addToFirst(int val){
@@ -13,6 +20,7 @@ public class DoublyLL {
             head.prev = node;
         }
         head = node;
+        size++;
     }
 
 
@@ -20,11 +28,12 @@ public class DoublyLL {
     public void printList(){
         Node current = head;
 
+        System.out.print("HEAD -> ");
         while(current != null){
             System.out.print(current.value + " <=> ");
             current = current.next;
         }
-        System.out.println("Null");
+        System.out.println("END");
     }
 
 
@@ -69,6 +78,7 @@ public class DoublyLL {
         last.next = node;
         node.prev = last;
 
+        size++;
     }
 
     public Node find(int val){
@@ -98,6 +108,8 @@ public class DoublyLL {
         if(node.next != null){
             node.next.prev = node;
         }
+
+        size++;
     }
 
     public void addBefore(int value,int before){
@@ -117,7 +129,70 @@ public class DoublyLL {
         p.next = node;
         node.prev = p;
         node.next.prev = node;
+        size++;
+    }
 
+    // Deleting element from first
+    public int deleteFirst(){
+
+        int val = head.value;
+        head = head.next;
+        head.prev = null;
+
+//        if(head == null){
+//            tail = head;
+//        }
+
+        size--;
+        return val;
+
+    }
+
+    //Deleting element from the last
+    public int deleteLast(){
+        if(head == null){
+            throw new NoSuchElementException();
+        }
+
+        Node secondLast = getIndex(size - 2);
+
+        int value = secondLast.next.value;
+        secondLast.next = null;
+
+        size--;
+
+        return value;
+
+    }
+
+    // Deleting element from a given index
+    public int deleteFromIndex(int index){
+        if(size == 0){
+            deleteFirst();
+        }
+        else if(size == index){
+            deleteLast();
+        }
+
+        Node toRemove = getIndex(index - 1);
+
+        int val = toRemove.next.value;
+
+        toRemove.next = toRemove.next.next;
+        toRemove.next.prev = toRemove;
+
+        size--;
+        return val;
+
+    }
+
+
+    public Node getIndex(int index){
+        Node temp = head;
+        for(int i = 0; i < index; i++){
+            temp = temp.next;
+        }
+        return temp;
     }
 
     private class Node{
